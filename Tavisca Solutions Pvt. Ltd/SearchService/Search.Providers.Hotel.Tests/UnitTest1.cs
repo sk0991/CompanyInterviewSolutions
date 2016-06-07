@@ -11,10 +11,10 @@ namespace Search.Providers.Hotel.Tests
         [TestMethod]
         public void XmlFileProviderGetHotelsTest()
         {
-            List<string> paths = new List<string>();
+            const string sampleXml1Path = @"D:\Data\Downloads\Sample1.xml";
+            const string sampleXml2Path = @"D:\Data\Downloads\Sample2.xml";
 
-            paths.Add(@"D:\Data\Downloads\Sample1.xml");
-            paths.Add(@"D:\Data\Downloads\Sample2.xml");
+            List<string> paths = new List<string> {sampleXml1Path, sampleXml2Path};
 
             new XmlFileProvider(paths).GetHotels(new HotelSearchCriteria());
         }
