@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Search.DataContracts
 {
     [DataContract]
-    public class Address 
+    public class Address
     {
         [DataMember]
         public string AddressLine1 { get; set; }
