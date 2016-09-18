@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ITrainSearchService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainSearchService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
