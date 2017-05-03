@@ -1,15 +1,25 @@
 ﻿using System;
+using StructureMap;
 
 namespace Railways.Entities
 {
     public static class InstanceManager
     {
-        public static T GetInstance<T>()
+        private static IContainer _container;
+
+        static InstanceManager()
         {
-            Type type = Type.GetType("");
-            return (T)Activator.CreateInstance(type);
+            _container = new Container(x =>
+                            {
+                                x.For<ILocationResolver>().Use<LocationResolver>();
+                                x.For<ITrainSearchManager>().Use<TrainSearchManager>();
+                            }
+                        );
         }
 
-        public const string LocationResolver = "LocationResolver";
+        public static T GetInstance<T>()
+        {
+            return _container.GetInstance<T>();
+        }
     }
 }

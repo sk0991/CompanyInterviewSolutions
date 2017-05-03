@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Railways.Entities
 {
-    public class ILocationResolver
+    public interface ILocationResolver
     {
     }
 }
