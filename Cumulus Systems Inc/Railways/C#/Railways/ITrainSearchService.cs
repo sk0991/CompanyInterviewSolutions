@@ -7,6 +7,6 @@ namespace Railways
     public interface ITrainSearchService
     {
         [OperationContract]
-        TrainSearchRS GetData(TrainSearchRQ trainSearchRq);
+        TrainSearchRS GetTrains(TrainSearchRQ trainSearchRq);
     }
 }

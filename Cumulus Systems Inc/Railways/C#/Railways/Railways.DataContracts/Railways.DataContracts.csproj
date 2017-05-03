@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ServiceResponse.cs" />
     <Compile Include="TrainSchedule.cs" />
     <Compile Include="City.cs" />
     <Compile Include="SearchCriteria.cs" />
