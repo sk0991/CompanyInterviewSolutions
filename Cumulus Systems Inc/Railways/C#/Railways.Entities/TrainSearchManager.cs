@@ -6,14 +6,17 @@ namespace Railways
 {
     public class TrainSearchManager : ITrainSearchManager
     {
-        private ILocationResolver locationResolver = InstanceManager.GetInstance<ILocationResolver>();
-        public TrainSearchManager()
-        {
+        private ILocationResolver _locationResolver;
 
+        public TrainSearchManager(ILocationResolver locationResolver)
+        {
+            this._locationResolver = locationResolver;
         }
 
         public TrainSearchRS GetTrains(TrainSearchRQ trainSearchRS)
         {
+
+
             throw new NotImplementedException();
         }
     }

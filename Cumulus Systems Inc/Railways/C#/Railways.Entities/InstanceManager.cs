@@ -11,8 +11,8 @@ namespace Railways.Entities
         {
             _container = new Container(x =>
                             {
-                                x.For<ILocationResolver>().Use<LocationResolver>();
-                                x.For<ITrainSearchManager>().Use<TrainSearchManager>();
+                                x.For<ILocationResolver>().Use<LocationResolver>().Singleton();
+                                x.For<ITrainSearchManager>().Use<TrainSearchManager>().Singleton();
                             }
                         );
         }

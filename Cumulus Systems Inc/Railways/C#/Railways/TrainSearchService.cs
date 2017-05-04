@@ -5,11 +5,11 @@ namespace Railways
 {
     public class TrainSearchService : ITrainSearchService
     {
-        private ITrainSearchManager serviceManager = InstanceManager.GetInstance<ITrainSearchManager>();
+        private ITrainSearchManager _serviceManager;
 
         public TrainSearchService()
         {
-
+            _serviceManager = InstanceManager.GetInstance<ITrainSearchManager>();
         }
 
         public TrainSearchRS GetTrains(TrainSearchRQ trainSearchRq)
@@ -19,7 +19,7 @@ namespace Railways
             if (!result)
                 return null;
 
-            return serviceManager.GetTrains(trainSearchRq);
+            return _serviceManager.GetTrains(trainSearchRq);
         }
     }
 }
