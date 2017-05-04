@@ -7,5 +7,15 @@ namespace Railways.DataContracts
     {
         [DataMember]
         public GeoCodes GeoCodes { get; set; }
+
+        public abstract LocationType Type { get; }
+
+        public abstract void Resolve();
+    }
+
+    public enum LocationType
+    {
+        City = 0,
+        Junction = 1,
     }
 }

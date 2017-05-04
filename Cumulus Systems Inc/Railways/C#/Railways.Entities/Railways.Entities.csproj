@@ -45,10 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ILocationResolver.cs" />
     <Compile Include="InstanceManager.cs" />
     <Compile Include="ITrainSearchManager.cs" />
-    <Compile Include="LocationResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainSearchManager.cs" />
   </ItemGroup>

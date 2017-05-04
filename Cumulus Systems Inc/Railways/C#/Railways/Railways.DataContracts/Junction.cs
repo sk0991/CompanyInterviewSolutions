@@ -16,5 +16,18 @@ namespace Railways.DataContracts
         public City City { get; set; }
 
         public HashSet<Junction> ConnectedTo { get; set; }
+
+        public override LocationType Type
+        {
+            get
+            {
+                return LocationType.Junction;
+            }
+        }
+
+        public override void Resolve()
+        {
+
+        }
     }
 }

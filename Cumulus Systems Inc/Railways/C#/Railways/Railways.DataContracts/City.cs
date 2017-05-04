@@ -13,5 +13,18 @@ namespace Railways.DataContracts
         public string State { get; set; }
 
         public List<Junction> Junctions { get; set; }
+
+        public override LocationType Type
+        {
+            get
+            {
+                return LocationType.City;
+            }
+        }
+
+        public override void Resolve()
+        {
+
+        }
     }
 }
