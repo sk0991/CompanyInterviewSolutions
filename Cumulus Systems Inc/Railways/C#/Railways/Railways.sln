@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railways.SearchService", "Railways.SearchService.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railways.DataContracts", "Railways.DataContracts\Railways.DataContracts.csproj", "{EB4F5AFF-CEF6-4755-9949-4804920B4A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railways.Entities", "..\Railways.Entities\Railways.Entities.csproj", "{4F150FC6-FB6B-4030-8F66-BBFFD4791707}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4F5AFF-CEF6-4755-9949-4804920B4A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4F5AFF-CEF6-4755-9949-4804920B4A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4F5AFF-CEF6-4755-9949-4804920B4A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4F5AFF-CEF6-4755-9949-4804920B4A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F150FC6-FB6B-4030-8F66-BBFFD4791707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F150FC6-FB6B-4030-8F66-BBFFD4791707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F150FC6-FB6B-4030-8F66-BBFFD4791707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F150FC6-FB6B-4030-8F66-BBFFD4791707}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
